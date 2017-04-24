@@ -1,0 +1,28 @@
+
+
+
+ OOP ==> java.lang
+ -----------------------
+ 
+ 
+ 
+ 1. class ==> objects
+ 
+ 		e.g EM
+ 		
+ 			==> employee(s) ==> Employee-type  ( class )
+ 			
+ 		
+ 2. Abstraction & Encapsulation
+ 
+ 
+ 	how to implement in java-lang ?
+ 	
+ 	
+ 	 --> using access-specifiers and packages ( self learn )
+ 	 --> using accessor(set & get ) methods
+ 	 --> using class & interfaces
+ 	 --> using structural design patterns
+ 	 
+ 	 
+ 	 -----------------------------------------------------

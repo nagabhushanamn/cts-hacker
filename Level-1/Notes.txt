@@ -355,6 +355,41 @@
       
       
     
+    Java Naming Conventions
+    
+    
+	    keywords ==> lower-case
+	    
+	    package-name ==> lower-case
+	    
+	    Type Name ==> pascal-case  A_____B_____
+	    
+	    var/method ==> camel-case _____A____B_____
+	   
+	    constant-var  ==> upper-case
+    
+    
+     ---------------------------------------------------------------------------------------------
+     
+     
+     
+     java programming style
+     
+     
+     "component and container" arc/style
+     
+     
+     a. Java SE
+     
+      	a. application   ===> client-JRE
+      	b. applet  ( closed )  ==> applet-viewer/browser
+      	
+     b. Java EE
+     
+     	a. web-comp ( servlet/jsp )  ==> web-container  e.g Tomcat,Jetty
+     	b. EJB  	   ===> EJB comtainer
+     
+     
     
     
     
