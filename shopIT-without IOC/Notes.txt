@@ -1,0 +1,13 @@
+
+
+  shopIT
+  ---------
+  
+  components
+  
+  
+    1. BillingComp  ==> getTotalPrice(cart) ==> dependent
+    2. PriceMatrix  ==> getPrice(item) ==> dependency
+    ....
+    
+    

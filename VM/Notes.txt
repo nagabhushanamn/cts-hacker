@@ -1,0 +1,24 @@
+
+
+  
+  dependency ==>  wheel : rotate()
+  
+  
+  
+   brands ( MRF , CEAT , etc ... )  ==> Wheel-community
+   
+   
+   	Wheel 
+   	
+   	    radius ==> 10
+   	    rotate();		
+   	    
+   	-----------------------------------    
+   	
+   	
+   
+   
+   
+   
+  
+    
