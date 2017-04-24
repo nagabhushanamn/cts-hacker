@@ -1,0 +1,372 @@
+
+
+
+
+    1. Java-language
+    -----------------------
+    
+    
+    a. project-struture
+    --------------------
+    
+    
+    root(default-package)
+    |
+    |
+    |---p1  ( .java /.class )
+    |
+    |
+    |---p2
+    | |
+    | |----p21 
+    |
+    
+    ------------------------------------------------------------------------
+    
+    b. Java File 
+    
+    
+     Abc.java
+    -------------------------------------------------
+    |
+    |
+    | // package dec ( 1 )
+    | // import statements ( n )
+    |
+    | // public type ( class | interface | enum | annotation )  ( 1 ) e.g Abc
+    |
+    | // default types ( n )
+    |
+    |--------------------------------------------------
+    
+    
+    ------------------------------------------------------------------------
+    
+    
+    c. Package dec
+    
+    
+    why we need ?
+    
+    
+    --> To avoid type-name collisions
+    --> easy to maintain 
+    
+    
+    syntax
+    
+    
+    package root.sub1.sub2;
+    
+    
+    recommended guideline to write package name
+    
+    e.g
+    
+       Employee.java ==> emp ==> EM ==> cts ==> org
+       
+       package c-type.cname.p-name.m-name;
+       
+       e.g
+       
+       package org.cts.em.emp;
+       
+       
+    
+    ------------------------------------------------------------------------
+    
+    d. import statements
+    
+    
+    e.g
+    
+      proj
+      
+      	p1 ==> A.java, B.java
+      	p2 ==> C.java , D.java
+      	p3 ==> D.java
+      	   .p31 ==> F.java
+      	
+      	
+      	e.g
+      	
+      	package p1;
+      	
+      	import p2.*;
+      	import p3.*;
+      	import p3.p31.*;
+      	
+      	public class A{
+      		B b;
+      		p2.C c;
+      		p3.D d;
+      		F f;
+      	}
+    
+    
+    	syntax
+    
+    import pack.Type;
+    import root.*;
+    
+    
+    ------------------------------------------------------------------------
+    
+    
+     OOP concepts
+     ------------
+     
+     what is object?
+     
+     
+     	 ==> State --> data,info,attr,prop
+     	 ==> Behavior --> work,func,method,oprn
+     	 ==> Identity --> addres,loc,reference 
+     	 
+     	 obj ==> SBI
+     	 	 
+     	 
+     class
+     
+     	--> template with state-def & behav of similar-objs
+     	
+     
+       class ==> instance	 
+       
+       ---------------------------------------------------------
+       
+       
+       OO concepts
+       
+ 
+       
+       1. Front-Side / Interface / Abstraction
+       
+       
+       	    why we need ?
+       	    
+       	    --> easy to learn/use by dependent	 
+       	    --> loose-coupling b/w dependent & dependency
+       	    
+       	2. Back-Side / Implementation / Encapsulation
+       	
+       		==> is implementation what we abstracted
+       		
+       		why we need ?
+       		
+       		--> to hide complex impln
+       		
+        3. Inheritance
+        	    
+    			
+    			to inherit common prop/behav from generalized-class to specialized-classes(s)
+    			
+    			
+    			why we need ?
+    
+    			--> to re-use
+    			--> to extend current system with new features
+    			
+    			
+    	     4. Polymorphism ( Many Forms )
+    	     
+    	     	
+    	     	why we need ?
+    	     	
+    	     	to satisfy " Closed for Modification & Open For Extention" OO principle
+    	     
+    	     			
+    	    ---------------------------------------------------------------------------------------------			
+    				
+    					
+    		Java _ Types
+    		---------------
+    		
+    		a. class
+    		------------
+	    		    		
+			_________   _________ class Name  [extends] BaseClass {
+			[public]    	[abstract]            [implements] Interface1,Interface1
+			[      ]    	[final]            
+					    [strictfp]    			
+					    			
+						    			// state ==> variables
+						    			
+						    			// constructor(s)
+						    			
+						    			// behavior(s) ==> methods
+						    			
+						    			// inner-class(s)
+		   ------------------------
+		   [public]		[static]		    			
+		   [protected]				    		
+		   [private]	 			    		}
+		   [       ] 
+    
+      
+     b. Interface
+     ------------
+     
+     
+     	 ______ interface Name [extends] Interface1,Interface2 {
+     	  
+     	  
+	     	  	// constant-state
+	     	  	public final static type varName=[value/object];
+	     	  	
+	     	  	// abstract-behav
+	     	  	public abstract ReturnType methodName([input])[throws] CheckedException;
+	     	  	
+	     	  	// from JDK 1.8
+	     	  	
+	     	  	public default ReturnType methofName([params]){
+	     	  		//..
+	     	  	}
+	     	  	
+	     	  	public static ReturType methodName(){
+	     	  		//...
+	     	  	}
+	     	  
+	     	  }
+    
+    
+    c. enum
+    --------------
+        	
+    		_____ enum Name{
+    		
+	    			constant(s)
+	    			
+	    		}
+    
+    
+     c. annotation
+    ----------------
+    
+    
+     _____ @interface Name{
+     
+	     	// props
+	     
+	     }
+    
+    
+    ---------------------------------------------------------------------------------------------
+    
+    
+    Java - variables ( Data Types/Structures )
+    ----------------------------------------------
+    
+    	data-types 
+    	
+    		1. simple / primitives ==> values  ( 8 keywords )
+    		2. complex / references ==> objects ( JavaType ==> class | interface | enum | Annotation )
+    
+    		e.g
+    		
+    		class Employee{
+    		
+    			static String tnrName;
+    			
+	    		int id;
+	    		String name;
+	    		
+	    		void m(){
+	    			int loc;
+	    		}
+    		}
+    		
+    
+    		____________	________ data-type varName=[value/object];
+        [public]    [static]
+        [private]   [final]
+        [protected] [transient]
+        [        ]  [volatile]
+    
+    	     local-var
+      ---------------------------
+         - Nil-     [final]
+    
+    
+     ---------------------------------------------------------------------------------------------
+    
+    
+      java - Methods 
+      ------------------
+      
+      3 return types
+      -----------------
+      
+      	1. void
+      	2. primitive
+      	3. reference
+      	
+      	class Employee{
+      	
+      		doListen(){}
+      		static doTeach(){}
+      	
+      	}
+      
+		      
+		   ___________    ___________ ReturType methodName([args])[throws] CheckedException{
+		   [public]    [static]  
+		   [private]   [final]  
+		   [protected] [synchronized]  	// A,L,R and Assignment
+		   [        ]  [strictfp]  	    // Conditional Statements
+		       		   [abstract]  	    // Looping oprns
+		               [native]  	    // Invoke other obj's behva 
+		         	
+		                     			[return][result]
+							         
+							         }
+							    	
+		    
+     ---------------------------------------------------------------------------------------------
+     
+     constrctors
+     
+     
+      why we need ?
+      
+      in java, obj creation is 2 step process
+      
+      step-1 : dynamic memory allocation
+      step-2 : initialize that memory with default/given values
+     
+    
+    
+      JavaType ref=new Constructor([[params]);
+      
+      
+      syntax
+      
+      
+      class Name{
+      
+      	public Name([args])[throws]Exception{
+      		// initialization Logic
+      	}
+      
+      }
+      
+      		    
+     ---------------------------------------------------------------------------------------------
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
