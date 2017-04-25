@@ -1,0 +1,36 @@
+
+
+  AbstrctClass & Interfaces
+  -----------------------------
+  
+  
+  module-1                      			 module-2
+  
+  
+  Top-level    ==> Interface
+  Middle-level ==> Abstract-Class ( if required , when we have multiple impln )
+  Bottom-Level ==> concrete-Class
+  
+  
+  
+  e.g  Collection F.W
+  
+  
+  Top-Level : Interfaces
+  
+       Collection
+       
+          -> List
+          -> Set
+          
+  Middle-Level 
+  
+          --> AbstractSequentialList    
+      
+  Bottom-Level
+  
+        -> ArrayList
+        -> LinkedList
+  
+                
+   
