@@ -1,0 +1,62 @@
+
+
+7 X 7
+
+
+//----------------------------
+
+A B C D E F G F E D C B A
+A B C D E F   F E D C B A
+A B C D E       E D C B A
+A B C D           D C B A
+A B C               C B A
+A B                   B A
+A                       A
+
+---------------------------------------------------------
+
+public static void matrix(String input) {
+		String ref = input;
+		StringBuilder sb = new StringBuilder(input);
+		StringBuilder sb1 = new StringBuilder(input.substring(0, input.length() - 1));
+		sb.append(sb1.reverse()); // 
+		input = sb.toString();
+		int refInc = input.length() / 2;
+		int refDec = refInc;
+		char[] charArray = input.toCharArray();
+		System.out.println(charArray);
+		if (input.length() % 2 != 0) {
+			for (int i=0; i<ref.length()-1; i++){
+				charArray[refInc] = ' ';
+				charArray[refDec] = ' ';
+				System.out.println(charArray);
+				refInc++;
+				refDec--;
+			}
+		}
+	}
+	
+---------------------------------------------------------
+
+
+
+public class ArrayDisp {
+	public static void main(String[] args) {
+		char[] c = {'A','B','C','D'};
+		int len=c.length-1;
+		int k=0;
+		for(int i=0; i<c.length; i++){
+			for(int j=0; j<=c.length*2-2; j++){				
+				if(j>=c.length-1){
+					System.out.print(c[k--]);
+				} else{
+					System.out.print(c[k++]);
+				}
+			}
+			k=0;
+			System.out.println("");
+			c[len--]=' ';
+		}
+	}
+}
+	

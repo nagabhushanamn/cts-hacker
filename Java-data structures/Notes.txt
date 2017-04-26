@@ -1,0 +1,61 @@
+
+
+
+  data-structure & Algorithms
+  ----------------------------
+  
+   --> organizing memory to keep data for programs to CRUDSS operations
+   
+   
+   
+      types
+      --------
+      
+      1. Primary
+     
+      	==> hold single data elements
+      	
+      	
+      
+      2. Abstract Data Type Structures ( secondary )
+      
+      
+      		1. linear
+      		
+      			- Array
+      			- LinkedList
+      			- Stack
+      			- Queue
+      			- Hashtable
+      			
+      			....
+      		
+      		
+      		2. Non-linear
+      		
+      			- Tree
+      			- Graph
+      			
+      			....
+      	
+      	
+      	-------------------------------------------------
+     
+     	
+      	     
+      	
+      	
+      	
+      	
+      	
+      	
+      	
+      	
+      
+         
+         
+   
+   
+   
+   
+   
