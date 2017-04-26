@@ -1,0 +1,82 @@
+
+
+
+
+case-study : my-facebook
+-------------------------------------
+
+
+datasource : mongodb/mysql
+
+server-app : REST-api-server app ( e.g Node.js based appln)
+
+client-app : browser-client / Mobile-app   ( UI )
+
+
+//-----------------------------------------------
+
+To install npm packages behind n/w proxy
+
+> npm config set proxy http://proxy.cognizant.com:6050
+> npm config set strict-ssl false
+
+npm i live-server -g
+
+
+
+//-----------------------------------------------
+
+
+
+
+Limitations using plain-js on browser-side appln dev
+
+
+--> browser compatability
+--> performance ( e.g -> DOM manipulation )
+--> memory leaks ( e.g cleaning un-used DOM elements , un-registerning event listeners)
+--> too much code for siple operations  
+--> code organization difficult          
+--> data-binding is manual
+
+
+soln
+
+ --> using third-party JS-lib and F.Ws
+
+   e.g
+
+     - jQuery
+
+
+        adv
+
+         --> browser compatabile
+         --> simplify DOM manipulations
+         --> easy to use
+
+        Limitations
+
+        --> close to DOM
+        --> Model(data),View(Html Template) , logic all together ==> code oraganization difficult 
+
+   ------------------------------------
+
+
+   best library to organize JS code well in browser-based appln
+
+
+   --> backbone.js
+
+      gives support for
+
+      --> Model
+      --> Collections
+      --> View components
+      --> Routting
+
+      etc...
+
+      --------------------------------------------
+
+      
